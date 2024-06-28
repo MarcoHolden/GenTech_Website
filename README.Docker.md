@@ -1,17 +1,13 @@
-### Building and running your application
+# GenTech_Website
 
-When you're ready, start your application by running:
-`docker compose up --build`.
+# Setup
+    -First make sure you have docker downloaded properly for your device
+     https://www.docker.com
+     
+    -Second pull this repository and all of the contents
+    -Third Run the command `docker compose up --build` in the terminal
+    -Fourth check "localhost:8080", there should be a page that says hello world and how many times you viewed the game, refresh to see if there is an update. 
+    -Fifth check localhost:8080/api/count this should say {"count": #oftimesrefreshed }
 
-### Deploying your application to the cloud
 
-First, build your image, e.g.: `docker build -t myapp .`.
-If your cloud uses a different CPU architecture than your development
-machine (e.g., you are on a Mac M1 and your cloud provider is amd64),
-you'll want to build the image for that platform, e.g.:
-`docker build --platform=linux/amd64 -t myapp .`.
 
-Then, push it to your registry, e.g. `docker push myregistry.com/myapp`.
-
-Consult Docker's [getting started](https://docs.docker.com/go/get-started-sharing/)
-docs for more detail on building and pushing.

@@ -6,5 +6,12 @@ services:
       NODE_ENV: production
     ports:
       - 8000:8000
-
-    
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 8080:80
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017

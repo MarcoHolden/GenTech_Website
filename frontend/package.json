@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.jsx --outdir=public --bundle --minify --sourcemap --define:process.env.NODE_ENV=\"\\\"production\\\"\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devdependencies": {
+    "esbuild": "^0.21.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5"
+  }
+}
