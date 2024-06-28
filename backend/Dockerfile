@@ -26,7 +26,7 @@ RUN --mount=type=bind,source=package.json,target=package.json \
     npm ci --omit=dev
 
 # Run the application as a non-root user.
-USER node
+# USER node
 
 # Copy the rest of the source files into the image.
 COPY . .
@@ -35,4 +35,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application.
-CMD node src/index.mjs
+CMD ./node_modules/.bin/nodemon src/index.mjs
