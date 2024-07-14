@@ -5,7 +5,7 @@ import { HomepageNavbar } from "./components/HomepageNavbar/HomepageNavbar";
 import "./App.css"
 
 export const App = () => {
-    return <div>
+    return <div id="app-container">
         <HomepageNavbar />
     </div>
 }
