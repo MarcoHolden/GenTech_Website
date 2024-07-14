@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild src/index.jsx --outdir=public --bundle --minify --sourcemap --define:process.env.NODE_ENV=\"\\\"production\\\"\"",
+    "build": "esbuild src/index.jsx --outdir=public --bundle --minify --sourcemap --loader:.gif=file --define:process.env.NODE_ENV=\"\\\"production\\\"\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

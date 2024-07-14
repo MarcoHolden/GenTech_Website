@@ -1,3 +1,5 @@
 node_modules
 public/index.js
-public/index.map.js
+public/index.js.map
+public/index.css
+public/index.css.map

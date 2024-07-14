@@ -1,0 +1,28 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#logo {
+    margin-right: auto;
+    height: 103px;
+    width: 191px;
+    object-fit: cover;
+}
+
+/* For both the join and login buttons */
+button {
+    width: 100px;
+    height: 40px;
+    margin: 0px 25px;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    background-color: #2C2C2C;
+    color: #34C759;
+}
