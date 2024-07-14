@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    develop:
+      watch:
+        - action: sync
+          path: ./backend/src
+          target: /usr/src/app/src
+        - action: rebuild
+          path: ./backend/package.json
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8000:8000
+  frontend:
+    build:
+      context: ./frontend
+    develop:
+      watch:
+        - action: rebuild
+          path: ./frontend
+          ignore:
+            - node_modules/
+    ports:
+      - 8080:80
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017

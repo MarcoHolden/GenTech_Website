@@ -5,5 +5,9 @@
      https://www.docker.com
      
     -Second pull this repository and all of the contents
-    -Third Run the command "docker-compose up" in the terminal
-    -Fourth check "localhost:80/test.php", there should be a page that says hello world
+    -Third Run the command `docker compose up --build` in the terminal
+    -Fourth check "localhost:8080", there should be a page that says hello world and how many times you viewed the game, refresh to see if there is an update. 
+    -Fifth check localhost:8080/api/count this should say {"count": #oftimesrefreshed }
+
+
+
