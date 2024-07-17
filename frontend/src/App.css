@@ -8,3 +8,12 @@ body {
    max-width: 1400px; 
    margin: auto;
 }
+
+#member-profiles {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}

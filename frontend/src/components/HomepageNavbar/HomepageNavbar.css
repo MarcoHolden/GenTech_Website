@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
     flex-direction: row;
     font-family: 'Roboto Mono', monospace;
 }
