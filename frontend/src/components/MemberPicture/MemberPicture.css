@@ -1,7 +1,13 @@
+.member-picture-container{
+    border-radius: 50%;
+    border: 5px solid #4CBF4A;
+    padding: 20px;
+}
+
 .member-picture {
     border-radius: 50%;
     width: 240px;
     height: 240px;
-    border: 5px solid #4CBF4A;
-    padding: 20px;
+    object-fit: cover;
+    border: 5px white solid;
 }
