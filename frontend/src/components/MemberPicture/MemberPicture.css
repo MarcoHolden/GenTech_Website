@@ -4,10 +4,18 @@
     padding: 20px;
 }
 
+/* Make the member pictures mobile friendly  */
+@media (max-width: 670px) {
+    .member-picture-container {
+        padding: 10;
+        border: 3px solid #4CBF4A;
+    }   
+}
+
 .member-picture {
     border-radius: 50%;
-    width: 240px;
-    height: 240px;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
     border: 5px white solid;
 }

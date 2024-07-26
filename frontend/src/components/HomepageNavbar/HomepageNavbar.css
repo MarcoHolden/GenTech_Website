@@ -14,7 +14,7 @@
 }
 
 /* For both the join and login buttons */
-button {
+.navbar-button {
     width: 100px;
     height: 40px;
     margin: 0px 25px;
