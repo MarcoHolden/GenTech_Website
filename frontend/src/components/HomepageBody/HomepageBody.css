@@ -23,7 +23,8 @@ body {
     overflow: hidden;
     animation: 
         typing 2s steps(22),
-        cursor .4s step-end infinite alternate;
+        cursor .4s step-end infinite alternate,
+        disappear 0s 2s forwards;
 }
 
 @keyframes cursor {
