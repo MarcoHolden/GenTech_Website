@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
     flex-direction: row;
     font-family: 'Roboto Mono', monospace;
 }
@@ -15,7 +14,7 @@
 }
 
 /* For both the join and login buttons */
-button {
+.navbar-button {
     width: 100px;
     height: 40px;
     margin: 0px 25px;
