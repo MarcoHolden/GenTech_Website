@@ -4,13 +4,27 @@
     width: 100%;
     flex-direction: row;
     font-family: 'Roboto Mono', monospace;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
 }
 
 #logo {
     margin-right: auto;
-    height: 103px;
+    height: 70px ;
     width: 191px;
     object-fit: cover;
+}
+
+/* Styling for the navbar links */
+.navbar-links a {
+    color: #34C759;
+    text-decoration: none;
+}
+
+.navbar-links {
+    margin-right: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 /* For both the join and login buttons */
@@ -24,4 +38,20 @@
     font-size: 16px;
     background-color: #2C2C2C;
     color: #34C759;
+}
+
+/* Make the navbar items little smaller for when we reach 900-px width */
+@media (max-width: 900px) {
+    .navbar-links a {
+        font-size: 12px;
+    }
+
+    .navbar-links {
+        margin-right: 2vw;
+        gap: 2vw;
+    }
+    
+    .navbar-button {
+        margin: 0px 2vw;
+    }
 }

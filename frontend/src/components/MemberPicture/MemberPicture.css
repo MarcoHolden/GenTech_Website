@@ -4,8 +4,8 @@
     padding: 20px;
 }
 
-/* Make the member pictures mobile friendly  */
-@media (max-width: 670px) {
+/* Make the member pictures more friendly for smaller screens  */
+@media (max-width: 770px) {
     .member-picture-container {
         padding: 10;
         border: 3px solid #4CBF4A;
