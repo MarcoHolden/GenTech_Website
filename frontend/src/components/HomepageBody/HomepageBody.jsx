@@ -3,7 +3,9 @@ import "./HomepageBody.css"
 
 
 export const HomepageBody = () => {
-    return <div className="containerAnimated1">
-        <p className="textAnimated1">&lt; Welcome to GenTech &gt;</p>
+    return <div className="content">
+        <div className="containerAnimated1">
+            <p className="textAnimated1">&lt; Welcome To GenTech &gt;</p>
+        </div>
     </div>
 }
