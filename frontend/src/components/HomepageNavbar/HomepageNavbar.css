@@ -4,8 +4,14 @@
     width: 100%;
     flex-direction: row;
     font-family: 'Roboto Mono', monospace;
-}
-
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
 #logo {
     margin-right: auto;
     height: 103px;
@@ -22,6 +28,6 @@
     border: 1px solid #FFFFFF;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    background-color: #2C2C2C;
+    background-color: #2c2c2c;
     color: #34C759;
 }
