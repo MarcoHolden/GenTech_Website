@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import { HomepageNavbar } from "./components/HomepageNavbar/HomepageNavbar";
 import { HomepageBody } from "./components/HomepageBody/HomepageBody";
 import "./App.css"
 import CursorTrail from './components/CursorTrail';
@@ -13,11 +12,12 @@ export const App = () => {
     return <div id="app-container">
         <HomepageNavbar />
         <CursorTrail />
+        <HomepageBody />
         <div id="member-profiles">
             <MemberPicture src="./member_pictures/1.jpg" />            
             <MemberPicture src="./member_pictures/2.jpg" />            
             <MemberPicture src="./member_pictures/3.jpg" />            
         </div>
-        <HomepageBody />
+
     </div>
 }
