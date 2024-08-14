@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    height: 70px;
     flex-direction: row;
     font-family: 'Roboto Mono', monospace;
     border-bottom: 1px solid white;
@@ -10,7 +11,7 @@
 
 #logo {
     margin-right: auto;
-    height: 70px ;
+    height: 100%;
     width: 191px;
     object-fit: cover;
 }
@@ -40,7 +41,24 @@
     color: #34C759;
 }
 
-/* Make the navbar items little smaller for when we reach 900-px width */
+.navbar-widescreen {
+    display: flex;
+    align-items: center;
+}
+
+/* For responsive button */
+.navbar-responsive-icon {
+    display: none;
+    padding-right: 20px;
+}
+
+.navbar-links-burger {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+/* Make the navbar responsive */
 @media (max-width: 900px) {
     .navbar-links a {
         font-size: 12px;
@@ -54,4 +72,19 @@
     .navbar-button {
         margin: 0px 2vw;
     }
+}
+
+@media (max-width: 700px) {
+   .navbar-links a {
+    color: red;
+   } 
+
+   .navbar-responsive-icon {
+    display: block;
+   }
+
+   .navbar-widescreen { 
+    display: none;
+   }
+
 }
