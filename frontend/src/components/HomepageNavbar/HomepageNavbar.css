@@ -12,7 +12,6 @@
 #logo {
     margin-right: auto;
     height: 100%;
-    width: 191px;
     object-fit: cover;
 }
 
@@ -52,7 +51,7 @@
     padding-right: 20px;
 }
 
-.navbar-links-burger {
+.navbar-links.burger {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -75,16 +74,42 @@
 }
 
 @media (max-width: 700px) {
-   .navbar-links a {
-    color: red;
-   } 
+    .navbar-button {
+       width: 60px;
+       font-size: 14px;
+    }
+}
 
+@media (max-width: 590px) {
    .navbar-responsive-icon {
     display: block;
    }
 
    .navbar-widescreen { 
     display: none;
+   }
+
+   .navbar-links.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+    /* Height of navbar, not sure how to not hardcode this value */
+    top: 72px;
+    right: 0px;
+    margin: 0; 
+    padding: 15px;
+    background-color: #030304;
+    width: 100%;
+   }
+
+   .navbar-links button {
+    width: 100px;
+   }
+
+   .navbar-links a {
+    font-size: 15px;
    }
 
 }

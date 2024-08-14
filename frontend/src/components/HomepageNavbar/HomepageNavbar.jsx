@@ -8,7 +8,7 @@ import { useMediaQuery } from "../../utils/useMediaQuery";
 export const HomepageNavbar = () => {
     // State that keeps track if the icon for small screens is open or closed
     const [isOpen, setisOpen] = useState(false);
-    const isSmallScreen = useMediaQuery("(max-width: 700px)");
+    const isSmallScreen = useMediaQuery("(max-width: 590px)");
 
     // When we come from big creen to small, always close the burger icon at the start
     useEffect(() => setisOpen(false), [isSmallScreen]);
@@ -40,12 +40,16 @@ export const HomepageNavbar = () => {
 
             {/* If the burger icon is open, render the navbar links */}
 
-            {isOpen && isSmallScreen && <div className="navbar-links-burger">
+            {isOpen && isSmallScreen && <div className="navbar-links burger">
                 <a href="">About</a>
                 <a href="">Projects</a>
                 <a href="">Resources</a>
                 <a href="">Members</a>
                 <a href="">Events</a>
+                
+                <button className="navbar-button">Join</button>
+                <button className="navbar-button">Login</button>
+
             </div>}
         
         </div>
