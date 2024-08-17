@@ -5,6 +5,7 @@ import "./App.css"
 import CursorTrail from './components/CursorTrail';
 import { HomepageNavbar } from "./components/HomepageNavbar/HomepageNavbar";
 import { MemberPicture } from "./components/MemberPicture/MemberPicture";
+import { Calendar } from "./components/Calendar/Calendar";
 
 export const App = () => {
     return <div id="app-container">
@@ -15,5 +16,9 @@ export const App = () => {
             <MemberPicture src="./member_pictures/2.jpg" />            
             <MemberPicture src="./member_pictures/3.jpg" />            
         </div>
+
+        {/* Calendar Section */}
+        <Calendar />
+
     </div>
 }

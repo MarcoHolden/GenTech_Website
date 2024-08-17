@@ -1,0 +1,53 @@
+.event-calendar {
+    --calendar-tile-width: 50px;
+}
+
+.event-calendar * {
+    font-family: "Roboto mono", sans-serif;
+}
+
+.event-calendar-header {
+    color: #34C759;
+    margin: 5px 0px;
+    display: flex;
+    width: calc(var(--calendar-tile-width) * 7 + 7px);
+}
+
+.event-calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.event-calendar-body div {
+    border: #34C759 0.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--calendar-tile-width);
+    height: var(--calendar-tile-width);
+    color: #34C759;
+}
+
+.calendar-date {
+    height: 30px !important;
+}
+
+.current-month-text {
+    width: 100%;
+}
+
+.calendar-button {
+    width: 30px; 
+    padding-left: 5px;
+}
+
+.calendar-button:hover {
+    cursor: pointer;
+}
+
+.calendar-button.prev {
+    transform: rotate(180deg);
+}
