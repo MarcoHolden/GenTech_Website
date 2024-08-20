@@ -35,12 +35,13 @@ export const Calendar = () => {
           <div className="current-month-text">{months[currentMonth]}, {currentDate.getFullYear()}</div>
           <img onClick={() => handleMonthChange(-1)} className="calendar-button prev" src={nextIcon} />
           <img onClick={() => handleMonthChange(1)} className="calendar-button next" src={nextIcon} />
-
         </div>
 
         <div className="event-calendar-body">
           {days.map((day) => <div className="calendar-date">{day}</div>)}
-          {range(1, currentMonthDays + 1, currentMonthFirstDay).map((value, index) => <div>{value}</div>)}
+          {range(1, currentMonthDays + 1, currentMonthFirstDay).map((value, index) => {
+            return <div className={value === 5 ? "event": null}>{value}</div>
+            })}
         </div>
     </div>
 }

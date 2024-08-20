@@ -46,8 +46,14 @@
 
 .calendar-button:hover {
     cursor: pointer;
+    scale: 1.05;
 }
 
 .calendar-button.prev {
     transform: rotate(180deg);
+}
+
+.event-calendar-body .event {
+    background: #34C759;
+    color: black;
 }
