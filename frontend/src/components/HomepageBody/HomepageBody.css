@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(40, 189, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px; /* Base font size */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; /* Adjust based on your nav height */
+}
+
+.containerAnimated1 {
+    display: inline-block;
+    position: relative;
+}
+
+.textAnimated1 {
+    font-size: 4rem;
+    letter-spacing: 0.3em;
+    font-family: monospace;
+    border-right: 0.25em solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(22),
+        cursor .4s step-end infinite alternate,
+        disappear 0s 2s forwards;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes disappear {
+    to { border-color: transparent }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .textAnimated1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .textAnimated1 {
+        font-size: 2rem;
+        letter-spacing: 0.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .textAnimated1 {
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+    }
+}

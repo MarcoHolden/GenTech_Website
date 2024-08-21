@@ -7,6 +7,11 @@
     font-family: 'Roboto Mono', monospace;
     border-bottom: 1px solid white;
     margin-bottom: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    z-index: 1000;
 }
 
 #logo {
@@ -36,7 +41,7 @@
     border: 1px solid #FFFFFF;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    background-color: #2C2C2C;
+    background-color: #2c2c2c;
     color: #34C759;
 }
 
