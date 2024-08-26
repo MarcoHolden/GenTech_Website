@@ -5,7 +5,7 @@ import "./App.css"
 import CursorTrail from './components/CursorTrail';
 import { HomepageNavbar } from "./components/HomepageNavbar/HomepageNavbar";
 import { MemberPicture } from "./components/MemberPicture/MemberPicture";
-import { Calendar } from "./components/Calendar/Calendar";
+import { UpcomingEvents } from "./components/UpcomingEvents/UpcomingEvents";
 
 export const App = () => {
     return <div id="app-container">
@@ -18,7 +18,7 @@ export const App = () => {
         </div>
 
         {/* Calendar Section */}
-        <Calendar />
+        <UpcomingEvents />
 
     </div>
 }

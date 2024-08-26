@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Calendar.css"
-import nextIcon from "../../assets/next-icon.svg";
+import nextIcon from "../../../assets/next-icon.svg";
 
 export const Calendar = () => {
     const [currentDate, setCurrentDate] = useState(new Date());

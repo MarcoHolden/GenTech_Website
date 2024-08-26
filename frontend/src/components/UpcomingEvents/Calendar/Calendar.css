@@ -1,5 +1,5 @@
 .event-calendar {
-    --calendar-tile-width: 50px;
+    --calendar-tile-width: 60px;
 }
 
 .event-calendar * {
@@ -37,6 +37,7 @@
 
 .current-month-text {
     width: 100%;
+    font-size: 20px;
 }
 
 .calendar-button {
