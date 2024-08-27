@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
+    font-family: "Roboto Mono";
+}
+
+.upcoming-events-title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Roboto Mono";
 }
 
 .event-card-list {
