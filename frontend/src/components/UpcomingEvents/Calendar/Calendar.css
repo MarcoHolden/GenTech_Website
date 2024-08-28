@@ -1,6 +1,9 @@
 .event-calendar {
     --calendar-tile-width: 70px;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
 }
 
 .event-calendar * {
