@@ -21,3 +21,28 @@
     flex-direction: column;
     gap: 20px;
 }
+
+@media (max-width: 850px) {
+    .event-calendar {
+        display: none !important;
+    }
+
+    .content {
+        margin: 70px 50px;
+    }
+
+    .upcoming-events {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .upcoming-events-title {
+        font-size: 24px;
+        margin: 15px 0px;
+    }
+    
+    .event-card-list {
+        gap: 10px;
+    }
+}
