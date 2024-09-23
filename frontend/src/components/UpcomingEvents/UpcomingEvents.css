@@ -7,15 +7,6 @@
     width: 100%;
 }
 
-.upcoming-events-title {
-    color: #fff;
-    font-size: 36px;
-    font-weight: 400;
-    font-family: "Roboto Mono";
-    align-self: flex-start;
-    margin: 25px 0px;
-}
-
 .event-card-list {
     display: flex;
     flex-direction: column;

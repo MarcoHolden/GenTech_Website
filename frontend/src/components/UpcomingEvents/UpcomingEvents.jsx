@@ -6,7 +6,7 @@ import { EventCard } from "./EventCard/EventCard";
 export const UpcomingEvents = () => {
   return (
     <>
-      <div className="upcoming-events-title">Upcoming Events</div>
+      <h1 className="upcoming-events-title">Upcoming Events</h1>
       <div className="upcoming-events">
         <div className="event-card-list">
           <EventCard />

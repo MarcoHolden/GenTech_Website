@@ -12,3 +12,27 @@
     justify-content: center;
     gap: 5vw;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #2C2C2C;
+    border: 1px solid #FFFFFFCC;
+    font-size: 16px;
+    font-style: normal;
+    padding: 20px 15px;
+    color: #FFF;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Roboto Mono";
+    align-self: flex-start;
+    margin: 25px 0px;
+}

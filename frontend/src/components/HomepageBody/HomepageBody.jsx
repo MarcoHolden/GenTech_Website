@@ -2,6 +2,7 @@ import React from "react";
 import "./HomepageBody.css"
 import { MemberPicture } from "../MemberPicture/MemberPicture";
 import { UpcomingEvents } from "../UpcomingEvents/UpcomingEvents";
+import { EarlyOpportunities } from "../EarlyOpportunities/EarlyOpportunities";
 
 export const HomepageBody = () => {
     return <div className="content">
@@ -17,6 +18,9 @@ export const HomepageBody = () => {
 
         {/* Upcoming events section */}
         <UpcomingEvents />
+
+        {/* Early opportunities section */}
+        <EarlyOpportunities />
 
     </div>
 }
