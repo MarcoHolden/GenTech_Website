@@ -8,6 +8,7 @@ import "./HomepageNavbar.css";
 import { useMediaQuery } from "@/utils/useMediaQuery";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HomepageNavbar = () => {
   // State that keeps track if the icon for small screens is open or closed
@@ -32,7 +33,7 @@ export const HomepageNavbar = () => {
           <a href="">About</a>
           <a href="">Projects</a>
           <a href="">Resources</a>
-          <a href="">Members</a>
+          <Link href="/member">Members</Link>
           <a href="">Events</a>
         </div>
 

@@ -9,7 +9,8 @@ export const HomepageBody = () => {
             <p className="textAnimated1">&lt; Welcome To GenTech &gt;</p>
         </div>
         
-        <div id="member-profiles">
+        <div className="flex justify-around" id="member-profiles">
+
             <MemberPicture src="./member_pictures/1.jpg" />            
             <MemberPicture src="./member_pictures/2.jpg" />            
             <MemberPicture src="./member_pictures/3.jpg" />            
