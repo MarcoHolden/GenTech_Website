@@ -1,0 +1,21 @@
+.member-picture-container{
+    border-radius: 50%;
+    border: 5px solid #4CBF4A;
+    padding: 20px;
+}
+
+/* Make the member pictures more friendly for smaller screens  */
+@media (max-width: 770px) {
+    .member-picture-container {
+        padding: 10;
+        border: 3px solid #4CBF4A;
+    }   
+}
+
+.member-picture {
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border: 5px white solid;
+}

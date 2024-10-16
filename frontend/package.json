@@ -1,22 +1,28 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "gentech-web-frontend",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "esbuild src/index.jsx --outdir=public --bundle --minify --sourcemap --loader:.gif=file --loader:.svg=file --define:process.env.NODE_ENV=\"\\\"production\\\"\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devdependencies": {
-    "esbuild": "^0.21.5"
+    "lucide-react": "^0.447.0",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "esbuild": "^0.21.5"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
